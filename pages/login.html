@@ -20,10 +20,103 @@
     </div>
     </div>
   </nav>
+ 
+  <div>
+    <h1>Login Logic</h1>
+    <h3>This logic checks if a user's input matches stored credentials.</h3>
+  </div>
 
 
-  <main class="container text-center">
-    <h1 class="display-3 m-2 p-2">Login Logic</h1>
+  <main>
+    
+
+    <h2>Code example</h2>
+    <ul>
+      <li>HTML</li>
+    
+
+    <pre style="text-align: left;">
+      <code>
+        &lt;div class="row justify-content-center"&gt;
+          &lt;div class="col-md-8"
+
+            &lt;input id="username" type="text" class="form-control p-2 fs-4 mb-2" placeholder="user name" value="shion"&gt;
+ 
+              &lt;div class="input-group"&gt;
+                &lt;input type="password" id="password" class="form-control p-2 fs-4 border-end-0" placeholder="password" value="1234"&gt;
+                  &lt;button class="btn border border-rounded border-start-0" type="button" id="togglePassword" aria-label="Toggle password visibility"&gt;
+                    &lt;i class="bi bi-eye-slash fs-4"&gt;
+                    &lt;/i&gt;
+                  &lt;/button&gt;
+             &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class="row mt-4 justify-content-center"&gt;
+          &lt;div class="col-md-8"&gt;
+            &lt;button id="login-button" class="btn btn-primary btn-lg w-100 fs-3 p-2 border border-rounded-pill" type="button" aria-label="Sign In"&gt;
+            Sign In
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+      </code>
+    </pre>
+
+    <li>JavaScript</li>
+    <pre>
+      <code>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        console.log("password is: 1234");
+      });
+      
+
+      //when button clicked, get username and password.
+      const login = document.getElementById('login-button');
+
+ 
+      login.addEventListener('click', function (event) {
+        console.log('clicked');
+
+
+      // Get form values from the DOM
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+        console.log("username + pwd:", username + ", " + password);
+
+      if (password === '1234') {
+        console.log('user is authenticated');
+   
+
+        // Store in session storage
+        sessionStorage.setItem('username', username);
+        sessionStorage.setItem('password', password);
+        sessionStorage.setItem('isAuthN', 'true');
+
+        window.location.assign("../index.html"); 
+      }
+      if (password != '1234') {
+        console.log('user is NOT authenticated'); 
+        sessionStorage.setItem('isAuthN', 'false');
+     }
+
+
+      // Log to console
+      console.log('session username:', username);
+      console.log('session password:', password);
+      console.log('session authN', sessionStorage.getItem('isAuthN')); 
+
+     });
+
+      </code>
+    </pre>
+
+    </ul>
 
   </main>
 

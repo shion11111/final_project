@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: lora;
+  font-family: 'lora';
 }
 
 #searchBox input {
@@ -65,4 +65,11 @@ body {
 .footer {
   font-size: 2rem;
 }
+
+main {
+  font-family: 'lora';
+  text-align: left;
+  font-weight: 300;
+}
+
 
