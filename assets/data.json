@@ -1,0 +1,37 @@
+{
+    "content": [
+        {
+            "title": "Project 1 - Trip Board",
+            "description": "Learned about how to create a webpage using HTML, CSS, and JavaScript. Created a trip board webpage that displays travel destinations and allows users to filter the results.",
+            "type": "project",
+            "live": "https://shion11111.github.io/project1-tripboard/",
+            "repo" : "https://github.com/shion11111/project1-tripboard"
+        },
+        {
+            "title": "Project 2 - Flags Matching Game",
+            "description": "Explored how to use jQuery to manipulate the DOM and create interactive web applications. Developed a flags matching game where players match country flags with their names.",
+            "type": "project",
+            "live": "https://shion11111.github.io/project2-flags-game/",  
+            "repo" : "https://github.com/shion11111/project2-flags-game"
+        },
+        {
+            "title": "Group Project -Short Cuts list",
+            "description": "Excisised how to work on the team and use GitHub for version control. Collaborated with classmates to create a webpage that lists useful keyboard shortcuts for various applications.",
+            "type": "project",
+            "live": "https://over-anna.github.io/team-project/",
+            "repo": "https://github.com/over-anna/team-project"
+        },
+        {
+            "title": "Login Logic",
+            "description": "Basic authentication using conditionals and local storage. Created a simple login page that validates user input and stores login information in the browser's local storage.",
+            "type": "guide",
+            "learn": "pages/login.html"
+        },
+        {
+            "title": "Filter Logic",
+            "description": "Filter items dynamically using JavaScript. Developed a webpage that allows users to filter a list of items based on categories and search input.",
+            "type": "guide",
+            "learn": "pages/filter.html"
+        }
+    ]
+}

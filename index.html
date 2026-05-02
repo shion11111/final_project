@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm sticky-top px-4">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-nowrap">
+
+            <!-- Row 1-->
+
+            <div class="topnav d-flex align-items-center gap-4"> 
+              <a class="nav-link" href="index.html">My Portfolio</a>
+              <a class="nav-link" href="https://github.com/shion11111">GitHub Profile</a>
+              <a class="nav-link" href="https://github.com/shion11111/final_project">Repository</a>         
+            </div>
+          </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="container text-center">
+        <h1 class="display-3 m-2 p-2">Welcome to My Portfolio</h1>
+
+          <div class="container">
+
+            <form class="d-flex gap-2 justify-content-center">
+
+              <input id="searchBox" class="searchClass form-control form-control-lg flex-grow-1 rounded-pill" type="search"
+              placeholder="search what I learned in CIS 376...">
+
+              <button id="sortBtn" class="searchClass btn btn-link text-dark fs-4 p-1" type="button" title="Sort">
+                <i class="bi bi-arrow-down-up"></i>
+              </button>
+
+              <button id="filterBtn" class="searchClass btn btn-link text-dark fs-4 p-1" type="button" title="Filter">
+                <i class="bi bi-funnel"></i>
+              </button>
+
+
+
+            </form>
+
+            <!-- card -->
+            <div class="container">
+              <div id="contentGrid" class="d-flex flex-wrap gap-4 justify-content-center mt-4"></div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <!--Footer-->
+      <footer class="footer mt-auto py-3 border-top text-center">
+        <div class="container">
+          <div class="d-flex justify-content-center gap-4 small text-muted flex-wrap">
+            <a href="https://github.com/shion1111/Final_Project"
+          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
+          &lt; <i class="bi bi-github"></i> source code &gt;
+        </a>
+
+        <span>
+          © 2024 Shion's Portfolio
+        </span>
+
+        <a href="https://github.com/shion1111"
+          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
+          <i class="bi bi-github"></i>
+          <i class="bi bi-person-circle"></i>
+          GitHub Profile
+        </a>
+
+      </div>
+    </div>
+  </footer>
+ 
+  
+  <script src="scripts/content.js"></script>
+  <script src="scripts/search.js"></script>
+
+</html>
