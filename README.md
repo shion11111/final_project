@@ -33,7 +33,7 @@ Shion Kishaba
 
 
 ## 🧱 Project Structure
-
+```
 C:.
 │   index.html
 │   README.md
@@ -51,7 +51,7 @@ C:.
 │
 └───styles
         style.css
-
+```
 
 ## 💡 Code Highlight
 ```scripts/content.js
@@ -66,8 +66,8 @@ This is the code loads data from a JSON file and then sends it to the renderCont
 
 
 ## ✅ Validatipon
-<a href="#" target="_blank">Nu Validator results</a>
-<a href="#" target="_blank">WAVE accessibility report</a>
+- <a href="#" target="_blank">Nu Validator results</a>
+- <a href="#" target="_blank">WAVE accessibility report</a>
 
 
 ## 🔮 Future Improvements
