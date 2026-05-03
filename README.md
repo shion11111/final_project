@@ -54,6 +54,8 @@ C:.
 ```
 
 ## 💡 Code Highlight
+### content.js
+This is the code loads data from a JSON file and then sends it to the renderContent function so it can displayed on the page.
 
 ```scripts/content.js
 fetch("./assets/data.json")
@@ -63,7 +65,7 @@ fetch("./assets/data.json")
     renderContent(contentData.content);
   });
 ```
-This is the code loads data from a JSON file and then sends it to the renderContent function so it can displayed on the page.
+
 
 
 ## ✅ Validatipon
