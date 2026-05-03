@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'lora';
+  font-family: 'Lora', serif;
 }
 
 #searchBox input {
@@ -48,7 +48,7 @@ body {
 
 
 #contentGrid .card {
-  font-family: 'lora';
+  font-family: 'Lora', serif;
 }
 
 .btn-primary {
