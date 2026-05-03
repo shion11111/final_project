@@ -2,8 +2,8 @@
  This app is a personal portfolio about what I learned in CIS 376 course.
 
 ## 👩‍💻 Author
-Shion Kishaba
-<a href="https://github.com/shion11111" target="_blank">GitHub Profile</a>
+- Shion Kishaba
+- <a href="https://github.com/shion11111" target="_blank">GitHub Profile</a>
 
 
 ## 📌 User Story
