@@ -54,6 +54,7 @@ C:.
 ```
 
 ## 💡 Code Highlight
+
 ```scripts/content.js
 fetch("./assets/data.json")
   .then(response => response.json())
@@ -75,6 +76,5 @@ This is the code loads data from a JSON file and then sends it to the renderCont
 
 - Future: Add a search bar that allows users to filter projects and guides by title or keyword. This will improve usability when the content list grow.
 - Improvement: Improve layout across all screen sizes, especially mobile, by refining spacing, font sizes, and card layout to ensure a consistent and readable user experience.
-- Issue: 
 
 
