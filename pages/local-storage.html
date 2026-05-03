@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top px-4">
+    <div class="container-fluid d-flex justify-content-between align-items-center flex-nowrap">
+
+    <!-- Row 1-->
+
+    <div class="topnav d-flex align-items-center gap-4"> 
+      <a class="nav-link" href="../index.html">Home</a>
+             
+    </div>
+    </div>
+  </nav>
+ 
+  <div>
+    <h1>Local Storage</h1>
+    <h3>Local storage allows you to store data in the browser even after the page is closed.</h3>
+  </div>
+
+  <main>
+    <h2>Code example</h2>
+    <ul>
+      <li>JavaScript</li>
+    </ul>
+
+    <pre style="text-align: left;">
+      <code>
+        function goToNextRound(nextPageUrl) {
+          // 1. Get the current score
+          let score = parseInt(localStorage.getItem("sessionScore")) || 0;
+    
+          // 2. Add a point (assuming they finished the round correctly) 
+          score++;
+    
+          // 3. Save it
+          localStorage.setItem("sessionScore", score);
+    
+          // 4. Go to the next page
+          window.location.href = nextPageUrl;
+        }
+
+        function displayFinalResults() {
+          // 1. Get the final score
+          const finalScore = parseInt(localStorage.getItem("sessionScore")) || 0;
+    
+          // 2. Get the high score
+          let highScore = parseInt(localStorage.getItem("highScore")) || 0;
+    
+          // 3. Update the high score if necessary
+          if (finalScore > highScore) {
+            highScore = finalScore;
+            localStorage.setItem("highScore", highScore);
+        }
+
+          const currentElem = document.getElementById("current-score");
+          const bestElem = document.getElementById("best-score");
+
+          if (currentElem) currentElem.innerText = finalScore;
+          if (bestElem) bestElem.innerText = highScore;
+        }
+      </code>
+    </pre>
+    
+</body>
+</html>

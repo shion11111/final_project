@@ -11,8 +11,8 @@
             "title": "Project 2 - Flags Matching Game",
             "description": "Explored how to use jQuery to manipulate the DOM and create interactive web applications. Developed a flags matching game where players match country flags with their names.",
             "type": "project",
-            "live": "https://shion11111.github.io/project2-flags-game/",  
-            "repo" : "https://github.com/shion11111/project2-flags-game"
+            "live": "https://shion11111.github.io/project2-game/",  
+            "repo" : "https://github.com/shion11111/project2-game"
         },
         {
             "title": "Group Project -Short Cuts list",
@@ -32,6 +32,12 @@
             "description": "Filter items dynamically using JavaScript. Developed a webpage that allows users to filter a list of items based on categories and search input.",
             "type": "guide",
             "learn": "pages/filter.html"
+        },
+        {
+            "title": "Local Storage",
+            "description": "Implementing local storage using JavaScript. Created a webpage that stores and retrieves data in the browser's local storage.",
+            "type": "guide",
+            "learn": "pages/local-storage.html"
         }
     ]
 }
