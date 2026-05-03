@@ -69,7 +69,7 @@ fetch("./assets/data.json")
 
 
 ## ✅ Validatipon
-- <a href="#" target="_blank">Nu Validator results</a>
+- <a href="https://validator.nu/?doc=https%3A%2F%2Fshion11111.github.io%2Fportfolio%2F" target="_blank">Nu Validator results</a>
 - <a href="#" target="_blank">WAVE accessibility report</a>
 
 
